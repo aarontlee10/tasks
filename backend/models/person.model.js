@@ -6,7 +6,7 @@ const personSchema = new Schema({
     firstName: {type: String, required: true},
     lastName: {type: String, required: false},
     username: {type: String, required: true, unique: true},
-    profilePicId: {type: Schema.Types.ObjectId, ref: Photo},
+    profilePicId: {type: Schema.Types.ObjectId, ref: Photo, required: false},
 },{
     timestamps: true,
 });
